@@ -1,0 +1,233 @@
+* .container {
+  max-width: 1400px;
+}
+
+header .container {
+  max-width: 1100px;
+}
+
+header .container nav {
+  background-color: white;
+}
+
+header .container nav .navbar-brand {
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
+}
+
+header .container nav .collapse {
+  display: flex !important;
+  justify-content: space-between;
+}
+
+header .container nav .collapse .navbar-nav .nav-item .nav-link {
+  color: black;
+  font-size: 25px;
+  margin: 5px 20px;
+}
+
+main #ready {
+  align-items: center;
+  display: flex;
+  height: 600px;
+  width: 100%;
+  background-color: #7eb9f8;
+}
+
+main #ready .container {
+  max-width: 750px;
+}
+
+main #ready .container .section1 {
+  text-align: center;
+}
+
+main #ready .container .section1 h2 {
+  color: white;
+  font-weight: 400;
+}
+
+main #ready .container .section1 .icon .fa-bomb {
+  color: #428bca;
+  font-size: 145px;
+  padding: 50px 5px;
+}
+
+main #ready .container .section1 .icon .fa-bomb:hover {
+  color: #333333;
+}
+
+main #ready .container .section1 .desc h3 {
+  font-weight: 400;
+  color: white;
+}
+
+main section .container {
+  max-width: 1200px;
+}
+
+main section .container h1 {
+  text-align: center;
+  margin: 50px 10px;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+main section .container .row .img-fluid {
+  width: 100%;
+  margin: 20px;
+}
+
+main #member-section {
+  background-color: #66b8f0;
+  padding: 70px 5px;
+}
+
+main #member-section .container {
+  max-width: 1200px;
+}
+
+main #member-section .container h1 {
+  text-align: center;
+  margin: 50px 10px;
+  color: white;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+main #member-section .container .row .member {
+  text-align: center;
+}
+
+main #member-section .container .row .member img {
+  width: 180px;
+  height: 180px;
+  border-radius: 5px;
+}
+
+main #member-section .container .row .member h3 {
+  color: white;
+}
+
+main #member-section .container .row .member p {
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+
+main #member-section .container .row .member .social-media {
+  display: flex;
+  justify-content: center;
+}
+
+main #member-section .container .row .member .social-media li {
+  border: 1px solid #357ebd;
+  border-radius: 5px;
+  list-style: none;
+}
+
+main #member-section .container .row .member .social-media li a i {
+  font-size: 40px;
+  padding: 7px 12px;
+  background-color: #428bca;
+  color: white;
+  z-index: 2;
+}
+
+@media (max-width: 991px) {
+  main #member-section .container .row .link-ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+main #member-section .container .row .link-ul li {
+  list-style: none;
+  height: 50px;
+  background-color: #428bca;
+  border-radius: 5px;
+  margin-top: 7px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+main #member-section .container .row .link-ul li a {
+  color: white;
+  font-size: 18px;
+}
+
+main #member-section .container .row .link-ul li a:after {
+  content: "+";
+  font-size: 20px;
+  position: absolute;
+  margin-left: 28px;
+  margin-top: -4px;
+}
+
+@media (max-width: 1200px) {
+  main #member-section .container .row .link-ul li a:after {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 1130px) {
+  main #member-section .container .row .link-ul li a:after {
+    margin-left: 7px;
+  }
+}
+
+main section {
+  padding: 70px 5px;
+}
+
+main section .container {
+  max-width: 1200px;
+}
+
+main section .container h1 {
+  text-align: center;
+  margin: 50px 10px;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+main section .container .form form {
+  text-align: center;
+}
+
+main section .container .form form .form-group input {
+  height: 60px;
+}
+
+main section .container .form form .button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #357ebd;
+  background-color: #428bca;
+  color: white;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #66b8f0;
+  height: 100%;
+}
+
+footer .footer-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+footer .footer-text p {
+  margin-right: 7px;
+  margin-top: 15px;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
