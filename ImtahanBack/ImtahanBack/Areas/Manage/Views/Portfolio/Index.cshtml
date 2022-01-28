@@ -1,0 +1,55 @@
+﻿
+@model List<Portfolio> 
+@{
+    int count = 0;
+    ViewData["Title"] = "Index";
+}
+<div class="container">
+    <a class="btn btn-danger" asp-action="Create" asp-controller="portfolio"> Create</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Image</th>
+                <th scope="col">Is Deleted</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                count++;
+            <tr>
+                <th scope="row">@count</th>
+                <td>
+                    <img width="100" src="~/uploads/portfolios/@item.Image" />
+                </td>
+                <td>
+                    @if (item.IsDeleted == true)
+                    {
+                        <span class="btn btn-danger"> Is Deleted </span>
+                    }
+                    else
+                    {
+                        <span class="btn btn-success">Is Not Deleted </span>
+                    }
+
+                </td>
+                <td>
+                    <a class="btn btn-danger delete-btn" asp-action="Delete" asp-route-id="@item.Id"> Delete</a>
+                    <a class="btn btn-primary " asp-action="Edit" asp-route-id="@item.Id"> Edit</a>
+                </td>
+
+            </tr>
+            }
+
+
+        </tbody>
+    </table>
+    
+</div>
+@section Scripts{ 
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.all.min.js"></script>
+}
+@*Muellim oyretdiyiniz her sey ucun tesekkurler)))*@
