@@ -1,0 +1,16 @@
+﻿@model Portfolio
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container">
+    <form method="post" asp-action="create" enctype="multipart/form-data" asp-controller="portfolio">
+        <div class="form-group">
+            <label asp-for="FileImage"> Sekil daxil edin</label>
+            <input asp-for="FileImage" >
+            <span asp-validation-for="FileImage"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+

@@ -1,0 +1,17 @@
+﻿@model Portfolio
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="container">
+    <form method="post" asp-action="edit" enctype="multipart/form-data" asp-controller="portfolio">
+        <div class="form-group">
+            <label asp-for="FileImage"> Sekil daxil edin</label>
+            <input asp-for="FileImage">
+            <span asp-validation-for="FileImage"></span>
+            <img width="100" src="~/uploads/portfolios/@Model.Image" />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
